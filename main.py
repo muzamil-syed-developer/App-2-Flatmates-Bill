@@ -24,6 +24,7 @@ class PdfReport:
     """Pdf report generator given the filename and the flatmates"""
 
     def __init__(self, filename):
+        self.filename = filename
 
     def generate(self, flatemate1, flatemate2, bill):
         pass
