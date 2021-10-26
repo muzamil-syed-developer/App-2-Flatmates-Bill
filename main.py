@@ -61,6 +61,10 @@ class PdfReport:
         #output file
         pdf.output(self.filename)
 
+        #open pdf
+        webbrowser.open("file://"+os.path.realpath(self.filename))
+
+
 #test code
 the_bill = Bill(amount = 120, period = "April 2021")
 john = Flatmate(name = "John", days_in_house = 20)
